@@ -9,7 +9,7 @@ function jugar_partida () {
         basic.showIcon(IconNames.Scissors)
     }
     music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    basic.pause(100)
+    basic.pause(1000)
     if (eleccion_jugador == eleccion_microbit) {
         basic.showLeds(`
             . # # # .
@@ -19,24 +19,28 @@ function jugar_partida () {
             . # # # .
             `)
         music.playMelody("C E C E - - - - ", 700)
-        basic.pause(200)
+        basic.pause(500)
         basic.showString("EMPATE!")
     } else if (eleccion_jugador == 1 && eleccion_microbit == 3) {
         basic.showIcon(IconNames.Yes)
-        basic.showString("GANASTE!")
         music._playDefaultBackground(music.builtInPlayableMelody(Melodies.PowerUp), music.PlaybackMode.InBackground)
+        basic.pause(500)
+        basic.showString("GANASTE!")
     } else if (eleccion_jugador == 2 && eleccion_microbit == 1) {
         basic.showIcon(IconNames.Yes)
-        basic.showString("GANASTE!")
         music._playDefaultBackground(music.builtInPlayableMelody(Melodies.PowerUp), music.PlaybackMode.InBackground)
+        basic.pause(500)
+        basic.showString("GANASTE!")
     } else if (eleccion_jugador == 3 && eleccion_microbit == 2) {
         basic.showIcon(IconNames.Yes)
-        basic.showString("GANASTE!")
         music._playDefaultBackground(music.builtInPlayableMelody(Melodies.PowerUp), music.PlaybackMode.InBackground)
+        basic.pause(500)
+        basic.showString("GANASTE!")
     } else {
         basic.showIcon(IconNames.No)
-        basic.showString("PERDISTE!")
         music._playDefaultBackground(music.builtInPlayableMelody(Melodies.PowerDown), music.PlaybackMode.InBackground)
+        basic.pause(500)
+        basic.showString("PERDISTE!")
     }
     basic.pause(1000)
     basic.showLeds(`
