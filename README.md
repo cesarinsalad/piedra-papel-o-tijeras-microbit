@@ -39,7 +39,7 @@ Un clásico juego de Piedra, Papel o Tijeras implementado para la tarjeta BBC Mi
 
 1.  Abre el editor de [MakeCode para Micro:bit](https://makecode.microbit.org/).
 2.  Haz clic en **"Importar"** y luego en **"Importar Archivo"** para cargar el archivo `.hex` de este proyecto (si lo tienes).
-3.  Alternativamente, puedes recrear el programa siguiendo la lógica de bloques descrita en clase o en la documentación asociada.
+3.  Alternativamente, puedes recrear el programa siguiendo la lógica de bloques descrita en la documentación asociada.
 4.  Conecta tu Micro:bit al ordenador mediante el cable USB. Aparecerá como una unidad llamada `MICROBIT`.
 5.  Haz clic en el botón **"Descargar"** en MakeCode. Se descargará un archivo `.hex`.
 6.  Arrastra y suelta el archivo `.hex` descargado en la unidad `MICROBIT`.
@@ -81,10 +81,5 @@ El programa se organiza en los siguientes bloques principales:
 
 *   **Sistema de Puntuación:** Añadir variables para llevar la cuenta de las victorias del jugador y de la Micro:bit y mostrarlas.
 *   **Número de Rondas:** Establecer un número fijo de rondas para determinar un ganador general del juego.
-*   **Más Animaciones/Sonidos:** Personalizar aún más los iconos y las melodías para hacer el juego más atractivo.
-*   **Diferentes Modos de Entrada:** Experimentar con el acelerómetro (agitar para elegir) u otros sensores si se dispone de ellos.
-
-#### Metadata
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+*   **Más Animaciones/Sonidos:** Personalizar aún más los iconos y las melodías para hacer el juego más atractivo.*
+*   
